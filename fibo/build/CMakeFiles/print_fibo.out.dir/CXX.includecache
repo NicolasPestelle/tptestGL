@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/etudiants/npestell/Documents/L3_GL_etudiant/TP_tests/fibo/src/Fibo.cpp
+Fibo.hpp
+/etudiants/npestell/Documents/L3_GL_etudiant/TP_tests/fibo/src/Fibo.hpp
+cassert
+-
+
+/etudiants/npestell/Documents/L3_GL_etudiant/TP_tests/fibo/src/Fibo.hpp
+
