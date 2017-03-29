@@ -1,0 +1,1 @@
+/usr/bin/c++   -std=c++14 -Wall -Wextra    CMakeFiles/drawspline.out.dir/src/Spline.cpp.o CMakeFiles/drawspline.out.dir/src/Vec2.cpp.o CMakeFiles/drawspline.out.dir/src/drawspline.cpp.o  -o drawspline.out -rdynamic -lglog 

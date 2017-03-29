@@ -5,28 +5,17 @@
 
 void Spline::addKey(double t, const Vec2 & P) {
     // keys should be added in ascending times
-  //throw !
-  if(times_.empty() or t >= times_.back()){
-      throw std::string("error addkey ! ");
-  }
-  times_.push_back(t);
-  values_.push_back(P);
-  /*  assert(times_.empty() or t >= times_.back());
-   times_.push_back(t);
-   values_.push_back(P);*/
+    assert(times_.empty() or t >= times_.back());
+
+    times_.push_back(t);
+    values_.push_back(P);
 }
 
 Vec2 Spline::getValue(double t) const {
     // invalid time
-    //a remplacer par throw
-  /*
     assert(t >= getStartTime());
     assert(t < getEndTime());
-  */
-  if(t >= getStartTime() && t < getEndTime()){
-    throw std::string("error getValue ! ");
-  }
-  
+
     // find piece corresponding to t
     int i=2;
     while (times_[i] <= t) i++;

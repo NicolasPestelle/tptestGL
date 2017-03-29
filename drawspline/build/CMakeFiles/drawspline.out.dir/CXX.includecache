@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/etudiants/npestell/Documents/L3_GL_etudiant/TP_tests/drawspline/src/Spline.cpp
+Spline.hpp
+/etudiants/npestell/Documents/L3_GL_etudiant/TP_tests/drawspline/src/Spline.hpp
+cassert
+-
+cmath
+-
+string
+-
+
+/etudiants/npestell/Documents/L3_GL_etudiant/TP_tests/drawspline/src/Spline.hpp
+Vec2.hpp
+/etudiants/npestell/Documents/L3_GL_etudiant/TP_tests/drawspline/src/Vec2.hpp
+vector
+-
+
+/etudiants/npestell/Documents/L3_GL_etudiant/TP_tests/drawspline/src/Vec2.hpp
+
