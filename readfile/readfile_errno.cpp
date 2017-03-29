@@ -28,12 +28,24 @@ int main(int argc, char ** argv) {
     cout << "Allocate V\n";
     int * V =  (int*)malloc(N*sizeof(int));
     // TODO
-    
+    for (int i = 0; i<N;i++){
+      if(not(file >> N)){
+	cerr << "allocate failed";
+	free(V);
+	exit(-1);
+      }
+    }
     
     cout << "Read V\n";
-    for (unsigned i=0; i<N; i++)
+    for (unsigned i=0; i<N; i++){
         file >> V[i];
     // TODO
+    if (not file >> V[i]){
+      cerr << "read failed";
+      free(V);
+      exit(-1);
+    }
+    }
 
     cout << "Print V\n";
     for (unsigned i=0; i<N; i++)

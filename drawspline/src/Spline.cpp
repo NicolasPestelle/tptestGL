@@ -12,7 +12,7 @@ void Spline::addKey(double t, const Vec2 & P) {
 }
 
 Vec2 Spline::getValue(double t) const {
-    // invalid time
+    // invalid time a remplacer par throw main : try/catch
     assert(t >= getStartTime());
     assert(t < getEndTime());
 
