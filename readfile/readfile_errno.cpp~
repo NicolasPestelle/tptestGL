@@ -15,12 +15,11 @@ int main(int argc, char ** argv) {
     if (not file.good()) {
         cerr << "ifstream failed\n";
         exit(-1);
-    }
-    
+   
     cout << "Read N\n";
     uint64_t N;
     // file >> N;
-    if(not (file >> N)){
+    if(not file >> N){
       cerr << "Read failed\n";
       exit(-1);
     }
@@ -28,7 +27,7 @@ int main(int argc, char ** argv) {
     cout << "Allocate V\n";
     int * V =  (int*)malloc(N*sizeof(int));
     // TODO
-    
+    if(
     
     cout << "Read V\n";
     for (unsigned i=0; i<N; i++)
